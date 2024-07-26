@@ -1,163 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--main-->
-    <section id="main">
-      <!--navigation bar-->
-      <nav>
-        <ul class="menu">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!--name-->
-      <div class="name">
-        <p>Hi</p>
-        <h1>I'm <span>Abdisa</span>Reta</h1>
-        <h3 class="student">I'm a Software Engineering student</h3>
-      </div>
-      <img class="pic" src="images/abdi.jpg" alt="" />
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--about section-->
-    <section id="about">
-      <div class="about-text">
-        <h1>About Me</h1>
-        <h2>Student in ASTU</h2>
-        <p class="para">
-          I am software student passionate about developing innovative
-          solutions.I have experience collaborating on diverse projects, like
-          toDo list. I'm eager to connect with fellow software enthusiasts and
-          explore new opportunities in the field.
-        </p>
-        <button>More Detail</button>
-      </div>
-      
-    </section>
-    <!--end of about section-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--skill section-->
-    <section id="skills" class="skills">
-      <div class="max-width">
-        <h1 class="heading">My Skills</h1>
-        <div class="skills-content">
-          <div class="column-left">
-            <div class="text">My skills and Experience</div>
-            <p>
-              I have good experience on those programming languages and I have
-              done some projects on those programming language. I am learning
-              HTML and CSS and now am working on web frontend development
-            </p>
-          </div>
-          <div class="column-right">
-            <div class="bars">
-              <div class="info1">
-                <span>HTML </span>
-                <span>80%</span>
-              </div>
-              <div class="line html"></div>
-            </div>
-            <div class="bars">
-              <div class="info1">
-                <span>CSS</span>
-                <span>75%</span>
-              </div>
-              <div class="line css"></div>
-            </div>
-            <div class="bars">
-              <div class="info1">
-                <span>Python</span>
-                <span>75%</span>
-              </div>
-              <div class="line python"></div>
-            </div>
-            <div class="bars">
-              <div class="info1">
-                <span>Java</span>
-                <span>70%</span>
-              </div>
-              <div class="line java"></div>
-            </div>
-            <div class="bars">
-              <div class="info1">
-                <span>C++</span>
-                <span>75%</span>
-              </div>
-              <div class="line Mysql"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--end of skill section-->
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--gallery section-->
-    <section id="gallery" class="gallery">
-      <div><h1>Gallery</h1></div>
-      <div><h3>J RESORT</h3></div>
-      <div class="photos">
-        <div class="image-container">
-          <img src="images/abdi6.jpg" alt="" class="images" />
-          <img src="images/abdi1.jpg" alt="" class="images" />
-          <img src="images/abdi2.jpg" alt="" class="images" />
-          <img src="images/abdi3.jpg" alt="" class="images" />
-          <img src="images/abdi4.jpg" alt="" class="images" />
-          <img src="images/abdi5.jpg" alt="" class="images" />
-        </div>
-      </div>
-    </section>
+        <title>Abdisa Portfolio website </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Abdisa</a>
+                </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact</h1>
-          <h3 class="contact-info">Contact Info</h3>
-        </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img class="icon" src="images/phone_icon.jpg" />
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abdisa</span><br> Web Designer</h1>
+                    <p class="home_text">I'm a Software Engineering student</p>
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/img/abdi.jpg" alt="">   
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/abdi1.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Abdisa</h2>
+                        <p class="about__text">I am a software student passionate about developing innovative solutions. I have experience collaborating on diverse projects, like a To-Do list. I'm eager to connect with fellow software enthusiasts and explore new opportunities in the field.</p>
+                        <a href="assets/img/myResume.pdf" class="about"><h2>Dowload CV</h2></a>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text"></p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-python python-icon"></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/abdi2.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== gallery =====-->
+            <section class="gallery section" id="gallery">
+                <h2 class="section-title">Gallery</h2>
+
+                <div class="gallery__container bd-grid">
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi1.jpg" alt="">
+                    </a>
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi2.jpg" alt="">
+                    </a>
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi3.jpg" alt="">
+                    </a>
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi4.jpg" alt="">
+                    </a>
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi5.jpg" alt="">
+                    </a>
+                    <a href="" class="gallery__img">
+                        <img src="assets/img/abdi6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Abdisa</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/abdisa8442" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+251 992435996</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                class="icon"
-                src="images/gmail_logo.jpg"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>abdisaretaintale@gmail.com</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img class="icon" src="images/address-png.jpg" />
-            </div>
-            <div class="contact-info">
-              <h1>Address</h1>
-              <h2>ASTU, Ethiopia</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
-  </body>
+            <p class="footer__copy">Cerate by <a href="#" class="footer"> Abdisa Reta </a> All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="#"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/scrip.js"></script>
+    </body>
 </html>
